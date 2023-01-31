@@ -15,9 +15,7 @@ module.exports = {
   devtool: 'eval-source-map', 
   plugins: [
     new ESLintPlugin(),
-    new CleanWebpackPlugin({
-      verbose: true
-    }),
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'Shape Tracker',
       template: './src/index.html',
